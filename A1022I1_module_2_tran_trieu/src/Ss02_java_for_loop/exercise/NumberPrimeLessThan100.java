@@ -4,7 +4,7 @@ public class NumberPrimeLessThan100 {
     public static void main(String[] args) {
         int number = 2;
         boolean check = true;
-        while (number < 100) {
+        while (number < 100) {//number less than 100 execution loops
              check = true;
             int i = 2;
             while (i <= Math.sqrt(number)) {

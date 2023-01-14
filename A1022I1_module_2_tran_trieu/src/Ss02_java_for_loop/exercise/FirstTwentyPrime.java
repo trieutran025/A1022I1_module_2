@@ -5,7 +5,7 @@ public class FirstTwentyPrime {
         int number = 2;
         int count = 0;
         while (count != 20) {
-            boolean check = true;
+            boolean check = true;// after each check loop will change
             int i = 2;
             while (i <= Math.sqrt(number)) {
                 if (number % i == 0) {
