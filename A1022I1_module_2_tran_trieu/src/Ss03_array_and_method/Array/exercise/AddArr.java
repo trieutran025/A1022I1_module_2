@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class AddArr {
     static int myArrFist[];
-    static int myArrAdded[];//Array
+    static int myArrAdded[];//Array will add number.
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

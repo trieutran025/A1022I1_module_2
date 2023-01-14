@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MergeArray {
     static int myArrFirst[];
     static int myArrSecond[];
-    static int myArrMerged[];
+    static int myArrMerged[];//myArrFirst and myArrSecond merged
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

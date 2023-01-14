@@ -15,7 +15,7 @@ public class RemoveArr {
             myArr[i] = sc.nextInt();
         }
         System.out.print("Enter index Array Remove:");
-        int index = sc.nextInt();//
+        int index = sc.nextInt();//value element will remove.
         int i = 0;
         while (i < myArr.length) {
             if (i == index) {
