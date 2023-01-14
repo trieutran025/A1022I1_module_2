@@ -1,10 +1,10 @@
-package ss03_ArrrayAndMethod_java.exercise;
+package Ss03_array_and_method.Array.exercise;
 
 import java.util.Scanner;
 
 public class AddArr {
     static int myArrFist[];
-    static int myArrAdded[];
+    static int myArrAdded[];//Array
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
