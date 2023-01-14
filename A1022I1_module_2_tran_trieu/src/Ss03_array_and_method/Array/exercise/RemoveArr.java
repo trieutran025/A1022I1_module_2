@@ -15,10 +15,10 @@ public class RemoveArr {
             myArr[i] = sc.nextInt();
         }
         System.out.print("Enter index Array Remove:");
-        int x = sc.nextInt();
+        int index = sc.nextInt();//
         int i = 0;
         while (i < myArr.length) {
-            if (i == x) {
+            if (i == index) {
                 while (i < myArr.length - 1) {
                     myArr[i] = myArr[i + 1];
                     i++;
