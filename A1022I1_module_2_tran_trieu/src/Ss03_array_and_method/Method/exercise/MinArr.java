@@ -5,6 +5,15 @@ import java.util.Scanner;
 public class MinArr {
     static int[] myArr;
 
+    public static int findMindArr(int arr[]) {//Find min in Array
+        int min = myArr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (myArr[i] < min)
+                min = myArr[i];
+        }
+        return min;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter size of myArr : ");
@@ -15,13 +24,8 @@ public class MinArr {
             System.out.print("Enter element value " + (i + 1) + ":");
             myArr[i] = sc.nextInt();
         }
-        //Find min in Array
-        int min = myArr[0];
-        for (int i = 1; i < size; i++) {
-            if (myArr[i] < min)
-                min = myArr[i];
-        }
         //Display the smallest value in the array
-        System.out.println("Value  min in Array : " + min);
+        int result = findMindArr(myArr);
+        System.out.println("Value  min in Array : " + result);
     }
 }
