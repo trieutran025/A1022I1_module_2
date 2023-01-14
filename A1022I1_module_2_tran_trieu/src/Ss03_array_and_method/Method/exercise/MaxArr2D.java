@@ -8,16 +8,20 @@ public class MaxArr2D {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter row Length:");
-        int rowLength= sc.nextInt();
+        int rowLength= sc.nextInt();//This is row length of myArr
+
         System.out.print("Enter column Length");
-        int columnLength = sc.nextInt();
+        int columnLength = sc.nextInt();//This is column of myArr
+        //initialize array
         myArr = new double[rowLength][columnLength];
+        //initialize values of matrix
         for (int i = 0; i < rowLength; i++) {
             for (int j = 0; j < columnLength; j++) {
                 System.out.print("Enter value element row " + (i + 1) + " col " + (j + 1) + " :");
                 myArr[i][j] = sc.nextDouble();
             }
         }
+        //Find value Max of matrix and coordinates
         int row = 0;
         int col = 0;
         double max = myArr[0][0];
@@ -30,6 +34,7 @@ public class MaxArr2D {
                 }
             }
         }
+        //Display Maximum Value and coordinates
         System.out.println("The largest matrix is : " + max + " coordinates " + "row : " + row + " column : " + col);
     }
 }
