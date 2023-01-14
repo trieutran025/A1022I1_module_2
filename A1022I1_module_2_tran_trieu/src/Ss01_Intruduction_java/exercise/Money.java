@@ -9,7 +9,7 @@ public class Money {
         double USD;//Money of USA
         System.out.println("enter USD : ");
         USD = sc.nextDouble();
-        double changeMoney = USD * 23000;
+        double changeMoney = USD * 23e3;
         System.out.println("Giá trị VND :"+changeMoney);
     }
 }
