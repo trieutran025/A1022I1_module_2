@@ -7,7 +7,7 @@ public class Money {
         Scanner sc = new Scanner(System.in);
         double VND = 23000;//Money of VietNam
         double USD;//Money of USA
-        System.out.print("enter USD : ");
+        System.out.println("enter USD : ");
         USD = sc.nextDouble();
         double changeMoney = USD * 23000;
         System.out.println("Giá trị VND :"+changeMoney);
