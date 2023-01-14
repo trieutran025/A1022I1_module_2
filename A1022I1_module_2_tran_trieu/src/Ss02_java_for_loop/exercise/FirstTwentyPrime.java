@@ -18,7 +18,7 @@ public class FirstTwentyPrime {
                 System.out.print(number + "\t");
                 count++;
             }
-            number++;
+            number++;//Number will change
         }
     }
 }
