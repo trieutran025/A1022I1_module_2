@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Money {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         double VND = 23000;//Money of VietNam
         double USD;//Money of USA
-        System.out.print("enter USD:");
-        Scanner sc = new Scanner(System.in);
+        System.out.print("enter USD : ");
         USD = sc.nextDouble();
-        double ChangeMoney = USD * 23000;
-        System.out.println("Giá trị VND:"+ChangeMoney);
+        double changeMoney = USD * 23000;
+        System.out.println("Giá trị VND :"+changeMoney);
     }
 }

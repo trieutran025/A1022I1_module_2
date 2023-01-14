@@ -7,7 +7,7 @@ public class VariableDataType {
         double d = 20.5; // declare variable d to be of type double with value 20.5
         boolean b = true; // declare variable b to be of type boolean with value true
         char c = 'a'; // declare variable c to be of type char whose value is the character a
-        String s = "Hà Nội"; //Declare variable s of type String whose value is the string Hanoi
+        String s = "HaNoi"; //Declare variable s of type String whose value is the string Hanoi
         System.out.println("i = " + i);
         System.out.println("f = " + f);
         System.out.println("d = " + d);

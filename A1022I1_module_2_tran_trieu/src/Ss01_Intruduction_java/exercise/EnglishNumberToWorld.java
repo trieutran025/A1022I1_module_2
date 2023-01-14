@@ -6,8 +6,8 @@ public class EnglishNumberToWorld {
     static String Str = "";//Null
 
     public static void main(String[] args) {
-        System.out.println("Enter number:");
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number : ");
         short number = sc.nextShort();
         if (number > 0 && number < 10) {
             switch (number) {
