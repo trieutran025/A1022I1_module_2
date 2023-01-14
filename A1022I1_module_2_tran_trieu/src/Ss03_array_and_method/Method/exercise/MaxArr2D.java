@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MaxArr2D {
     static double[][] myArr;
-    public static void findMaxAndCoordinates(double Arr[][]) {//Find value Max of matrix and coordinates
+    public static void findMaxAndCoordinates(double arr[][]) {//Find value Max of matrix and coordinates
         int row = 0;
         int col = 0;
         double max = myArr[0][0];
