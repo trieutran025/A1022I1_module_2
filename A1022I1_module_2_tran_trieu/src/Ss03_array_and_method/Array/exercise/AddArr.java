@@ -19,11 +19,11 @@ public class AddArr {
         int x = sc.nextInt();
         System.out.println("Enter index :");
         int index = sc.nextInt();
-        if (index <= 1 || index >= args.length - 1) {
+        if (index <= 1 || index >= myArrFist.length - 1) {
             System.out.println("X Don't Add in myArr");
         } else {
             myArrAdded = new int[myArrFist.length + 1];
-            System.arraycopy(myArrFist, 0, myArrAdded, 0, myArrFist.length);
+            System.arraycopy(myArrFist, 0, myArrAdded, 0, myArrFist.length-1);
             int i = 0;
             while (i < myArrAdded.length) {
                 if (i == index) {
@@ -38,6 +38,6 @@ public class AddArr {
             for (int value : myArrAdded) {
                 System.out.print(value + " \t ");
             }
-        }   
+        }
     }
 }
