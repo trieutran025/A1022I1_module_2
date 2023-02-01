@@ -19,7 +19,7 @@ public class AddArr {
         int x = sc.nextInt();
         System.out.println("Enter index :");
         int index = sc.nextInt();
-        if (index <= 1 && index >= args.length - 1) {
+        if (index <= 1 || index >= args.length - 1) {
             System.out.println("X Don't Add in myArr");
         } else {
             myArrAdded = new int[myArrFist.length + 1];
