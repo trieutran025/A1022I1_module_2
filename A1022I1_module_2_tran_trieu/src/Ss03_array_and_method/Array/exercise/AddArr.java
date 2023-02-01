@@ -36,8 +36,8 @@ public class AddArr {
                 i++;
             }
             for (int value : myArrAdded) {
-                System.out.print(value + "\t");
+                System.out.print(value + " \t ");
             }
-        }
+        }   
     }
 }
