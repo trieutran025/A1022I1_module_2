@@ -23,7 +23,7 @@ public class AddArr {
             System.out.println("X Don't Add in myArr");
         } else {
             myArrAdded = new int[myArrFist.length + 1];
-            System.arraycopy(myArrFist, 0, myArrAdded, 0, myArrFist.length );
+            System.arraycopy(myArrFist, 0, myArrAdded, 0, myArrFist.length - 1);
             int i = 0;
             while (i < myArrAdded.length) {
                 if (i == index) {
