@@ -21,31 +21,31 @@ public class Fan {
         return on;
     }
 
-    public void setOn(boolean on) {
-        this.on = on;
+    public void setOn(boolean newOn) {
+        this.on = newOn;
     }
 
     public double getRadius() {
+
         return radius;
     }
 
-    public void setRadius(double radius) {
-        this.radius = radius;
+    public void setRadius(double newRadius) {
+
+        this.radius = newRadius;
     }
 
     public String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setColor(String newColor) {
+
+        this.color = newColor;
     }
 
     public Fan() {
-        this.speed = SLOW;
-        this.on = false;
-        this.radius = 5;
-        this.color = "blue";
+        this(SLOW, false, 5, "blue");
     }
 
     public Fan(int speed, boolean on, double radius, String color) {
