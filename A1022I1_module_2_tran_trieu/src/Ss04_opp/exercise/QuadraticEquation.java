@@ -4,11 +4,11 @@ package Ss04_opp.exercise;
 import java.util.Scanner;
 
 public class QuadraticEquation {
-    private double a, b, c;
-    private double Discriminant;
-    private double getRoot;
-    private double getRootFirst;
-    private double getRootSecond;
+    private double a, b, c;//This is a,b,c
+    private double discriminant;
+    private double root;
+    private double rootFirst;
+    private double rootSecond;
 
     public QuadraticEquation(double a, double b, double c) {
         this.a = a;
@@ -34,28 +34,32 @@ public class QuadraticEquation {
     }
 
     public double getRootFirst() {
-        getRootFirst = (-b + Math.pow(getDiscriminant(), 0.5)) / (2 * a);
-        return getRootFirst;
+        rootFirst = (-b + Math.pow(getDiscriminant(), 0.5)) / (2 * a);
+        return rootFirst;
     }
 
     public double getRootSecond() {
-        getRootSecond = (-b - Math.pow(getDiscriminant(), 0.5)) / (2 * a);
-        return getRootSecond;
+        rootSecond = (-b - Math.pow(getDiscriminant(), 0.5)) / (2 * a);
+        return rootSecond;
     }
 
     public double getRoot() {
-        getRoot = -b / (2 * a);
-        return getRoot;
+        root = -b / (2 * a);
+        return root;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter a,b,c:");
         double a = sc.nextDouble();
         double b = sc.nextDouble();
         double c = sc.nextDouble();
+
         QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
+
         double delta = quadraticEquation.getDiscriminant();
+
         if (delta > 0) {
             double rootFirst = quadraticEquation.getRootFirst();
             double rootSecond = quadraticEquation.getRootSecond();
