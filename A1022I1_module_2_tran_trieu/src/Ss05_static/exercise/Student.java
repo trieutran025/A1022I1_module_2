@@ -14,11 +14,5 @@ public class Student {
     public void setClasses(String classes) {
         this.classes = classes;
     }
-    public static class Test{
-        public static void main(String[] args) {
-            Student student = new Student();
-            student.setName("Haley");
-            student.setClasses("A13");
-        }
-    }
+
 }

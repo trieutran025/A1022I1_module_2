@@ -10,20 +10,13 @@ public class Circle {
     private Circle(double radius) {
         this.radius = radius;
     }
-   private double getRadius(){
+   public double getRadius(){
       return this.radius;
    }
-   private String getColor(){
+   public String getColor(){
        return  this.color;
     }
 
 
-    public static class TestCircle {
-        public static void main(String[] args) {
-            Circle circle = new Circle();
-            System.out.println(circle.getRadius());
-            System.out.println(circle.getColor());
-        }
-    }
 }
 
