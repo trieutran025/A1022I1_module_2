@@ -57,7 +57,7 @@ public class Fan {
 
     @Override
     public String toString() {
-        if (isOn() == true) {
+        if (on == true) {
             return "Fan{" +
                     "speed=" + speed +
                     ", radius=" + radius +
