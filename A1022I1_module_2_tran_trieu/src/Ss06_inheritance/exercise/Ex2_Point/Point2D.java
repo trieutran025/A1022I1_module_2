@@ -1,4 +1,4 @@
-package Ss06_inheritance.exercise.Ex2_point;
+package Ss06_inheritance.exercise.Ex2_Point;
 
 import java.util.Arrays;
 
