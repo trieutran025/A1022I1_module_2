@@ -27,9 +27,9 @@ public class Cylinder extends Circle {
     @Override
     public String toString() {
         return "Cylinder{" +
-                "radius=" + getRadius() +
-                "height="+getHeight() +
-                ", color='" + getColor() + '\'' +
+                "radius =" + getRadius() +
+                "height ="+getHeight() +
+                ", color ='" + getColor() + '\'' +
                 '}';
     }
 }
