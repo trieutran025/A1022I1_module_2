@@ -1,6 +1,6 @@
 package Ss06_inheritance.exercise.Ex1_cricle;
 
-public class testCylinder {
+public class TestCylinder {
     public static void main(String[] args) {
         Circle circle = new Circle();
         System.out.println(circle);
