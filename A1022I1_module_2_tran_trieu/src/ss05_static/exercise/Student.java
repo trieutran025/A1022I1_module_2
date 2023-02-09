@@ -1,4 +1,4 @@
-package Ss05_static.exercise;
+package ss05_static.exercise;
 
 public class Student {
     private String name="John";

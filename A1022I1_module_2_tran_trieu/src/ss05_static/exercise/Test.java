@@ -1,4 +1,4 @@
-package Ss05_static.exercise;
+package ss05_static.exercise;
 
 public class Test {
     public static void main(String[] args) {

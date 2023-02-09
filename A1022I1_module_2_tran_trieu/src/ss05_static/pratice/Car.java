@@ -1,4 +1,4 @@
-package Ss05_static.pratice;
+package ss05_static.pratice;
 
 public class Car {
     private String name;

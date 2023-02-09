@@ -1,4 +1,4 @@
-package Ss05_static.pratice;
+package ss05_static.pratice;
 
 public class testStaticMethod {
     public static void main(String[] args) {

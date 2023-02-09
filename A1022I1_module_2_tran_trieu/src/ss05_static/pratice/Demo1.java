@@ -1,4 +1,4 @@
-package Ss05_static.pratice;
+package ss05_static.pratice;
 
 public class Demo1 {
     public int c;//0
