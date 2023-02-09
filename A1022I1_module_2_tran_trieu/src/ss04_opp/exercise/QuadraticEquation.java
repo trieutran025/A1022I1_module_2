@@ -1,4 +1,4 @@
-package Ss04_opp.exercise;
+package ss04_opp.exercise;
 
 
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Ss04_opp.pratice;
+package ss04_opp.pratice;
 
 public class Student {
     private int id;

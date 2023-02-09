@@ -1,6 +1,4 @@
-package Ss04_opp.pratice;
-
-import java.sql.SQLOutput;
+package ss04_opp.pratice;
 
 public class Test {
     public static void main(String[] args) {

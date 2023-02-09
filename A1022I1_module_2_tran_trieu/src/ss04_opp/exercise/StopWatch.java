@@ -1,6 +1,4 @@
-package Ss04_opp.exercise;
-
-import java.time.LocalTime;
+package ss04_opp.exercise;
 
 public class StopWatch {
     private String startTime;
