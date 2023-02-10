@@ -5,7 +5,6 @@ public class Rectangle extends Shape implements Resizeable {
     private double length = 1.0;
 
 
-
     public Rectangle(double width, double length) {
         this.width = width;
         this.length = length;
@@ -47,16 +46,16 @@ public class Rectangle extends Shape implements Resizeable {
     @Override
     public String toString() {
         return "Rectangle{" +
-                "width=" + width +";"+
-                "length=" + length +";"+
-                "area of the original rectangle:"+getArea()+";"+
-                "area of rectangle after increasing:"+getAreaChange()+
+                "width=" + width + ";" +
+                "length=" + length + ";" +
+                "area of the original rectangle:" + getArea() + ";" +
+                "area of rectangle after increasing:" + getAreaChange() +
                 '}';
     }
 
     @Override
     public void resize(double percent) {
-    this.width*=percent/100;
-    this.length*=percent/100;
+        this.width *= percent / 100;
+        this.length *= percent / 100;
     }
 }

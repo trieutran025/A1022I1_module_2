@@ -1,8 +1,8 @@
 package ss07_abstract_interface.exercise.resizeable_shape;
 
 public class Shape {
-    private String color="red";
-    private boolean filled=true;
+    private String color = "red";
+    private boolean filled = true;
 
     public Shape(String color, boolean filled) {
         this.color = color;

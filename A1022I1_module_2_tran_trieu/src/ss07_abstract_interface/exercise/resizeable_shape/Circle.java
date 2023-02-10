@@ -36,14 +36,14 @@ public class Circle extends Shape implements Resizeable {
     @Override
     public String toString() {
         return "Circle{" +
-                "radius=" + radius +";"+
-                "area of the original circle:"+getArea()+";"+
-                "area of circle after increasing:"+getAreaChange()+
+                "radius=" + radius + ";" +
+                "area of the original circle:" + getArea() + ";" +
+                "area of circle after increasing:" + getAreaChange() +
                 '}';
     }
 
     @Override
     public void resize(double percent) {
-        this.radius *= percent/100;
+        this.radius *= percent / 100;
     }
 }
