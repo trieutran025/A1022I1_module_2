@@ -21,6 +21,7 @@ public class Square extends Shape implements Resizeable {
     public double getArea() {
         return getSquareEdge() * getSquareEdge();
     }
+
     public double getAreaChange() {
         int increase = (int) (Math.random() * 101);
         resize(increase);
@@ -30,14 +31,14 @@ public class Square extends Shape implements Resizeable {
     @Override
     public String toString() {
         return "Square{" +
-                "squareEdge=" + squareEdge +";"+
-                "area of the original Square:"+getArea()+";"+
-                "area of square after increasing:"+getAreaChange()+
+                "squareEdge=" + squareEdge + ";" +
+                "area of the original Square:" + getArea() + ";" +
+                "area of square after increasing:" + getAreaChange() +
                 '}';
     }
 
     @Override
     public void resize(double percent) {
-        this.squareEdge*=percent/100;
+        this.squareEdge = this.squareEdge + this.squareEdge * percent / 100;
     }
 }
