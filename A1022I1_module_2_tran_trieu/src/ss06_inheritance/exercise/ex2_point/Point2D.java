@@ -1,6 +1,4 @@
-package Ss06_inheritance.exercise.ex2_point;
-
-import java.util.Arrays;
+package ss06_inheritance.exercise.ex2_point;
 
 public class Point2D {
     private float x;

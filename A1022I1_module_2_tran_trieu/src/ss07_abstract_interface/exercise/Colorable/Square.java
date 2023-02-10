@@ -1,4 +1,4 @@
-package ss07_abstract_interface.exercise.Colorable;
+package ss07_abstract_interface.exercise.colorable;
 
 public class Square implements Colorable {
     private double squareEdge;

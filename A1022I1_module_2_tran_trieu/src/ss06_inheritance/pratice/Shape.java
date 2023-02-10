@@ -1,10 +1,10 @@
-package ss07_abstract_interface.practice.pr2_interface_comparable_shape;
+package ss06_inheritance.pratice;
 
 public class Shape {
     private String color;
     boolean filled;
 
-    public Shape(String color, boolean filled) {
+    public Shape() {
         this.color = color;
         this.filled = filled;
     }

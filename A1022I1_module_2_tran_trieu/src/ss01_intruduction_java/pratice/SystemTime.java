@@ -1,4 +1,4 @@
-package Ss01_Intruduction_java.pratice;
+package ss01_intruduction_java.pratice;
 
 import java.util.Date;
 

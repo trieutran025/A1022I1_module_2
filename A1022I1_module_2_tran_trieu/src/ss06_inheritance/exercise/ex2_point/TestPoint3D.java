@@ -1,6 +1,4 @@
-package Ss06_inheritance.exercise.ex2_point;
-
-import java.util.Arrays;
+package ss06_inheritance.exercise.ex2_point;
 
 public class TestPoint3D {
     public static void main(String[] args) {

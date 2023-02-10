@@ -1,6 +1,4 @@
-package Ss06_inheritance.pratice.Demo;
-
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+package ss06_inheritance.pratice.Demo;
 
 public class Test {
     public static void main(String[] args) {

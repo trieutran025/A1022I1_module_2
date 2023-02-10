@@ -1,16 +1,15 @@
-package ss06_inheritance.pratice;
+package ss07_abstract_interface.practice.pr2_interface_comparable_shape;
 
 public class Circle extends Shape {
     private double radius = 1.0;
 
+    public Circle(String color, boolean filled) {
+        super(color, filled);
+    }
+
     public Circle() {
     }
-    public Circle (double radius){
-        this.radius=radius;
-    }
-    public Circle(double radius, String color, boolean filled) {
-        this.radius = radius;
-    }
+
 
     public double getRadius() {
         return radius;

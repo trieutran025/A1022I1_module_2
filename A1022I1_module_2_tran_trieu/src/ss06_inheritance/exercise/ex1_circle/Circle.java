@@ -1,4 +1,4 @@
-package Ss06_inheritance.exercise.ex1_circle;
+package ss06_inheritance.exercise.ex1_circle;
 
 public class Circle {
     private double radius ;

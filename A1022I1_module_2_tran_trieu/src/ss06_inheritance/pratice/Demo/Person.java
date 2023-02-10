@@ -1,4 +1,4 @@
-package Ss06_inheritance.pratice.Demo;
+package ss06_inheritance.pratice.Demo;
 
 public class Person {
     private int id;

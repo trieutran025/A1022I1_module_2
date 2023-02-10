@@ -1,4 +1,4 @@
-package Ss03_array_and_method.Method.pratice;
+package ss03_array_and_method.Method.pratice;
 
 public class Test {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Ss06_inheritance.pratice;
+package ss06_inheritance.pratice;
 
 public class RectangleTest {
     public static void main(String[] args) {

@@ -1,2 +1,5 @@
-package ss07_abstract_interface.demo;public interface IFly {
+package ss07_abstract_interface.demo;
+
+public interface IFly {
+    void fly();
 }

@@ -1,4 +1,4 @@
-package Ss02_java_for_loop.exercise;
+package ss02_java_for_loop.exercise;
 
 public class FirstTwentyPrime {
     public static void main(String[] args) {

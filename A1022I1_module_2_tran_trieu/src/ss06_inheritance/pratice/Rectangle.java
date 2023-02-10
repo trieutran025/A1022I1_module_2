@@ -1,6 +1,6 @@
-package Ss06_inheritance.pratice;
+package ss06_inheritance.pratice;
 
-public class Rectangle extends Shape  {
+public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -13,7 +13,7 @@ public class Rectangle extends Shape  {
     }
 
     public Rectangle(String color, boolean filled, double width, double length) {
-        super(color, filled);
+        super();
         this.width = width;
         this.length = length;
     }
