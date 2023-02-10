@@ -1,12 +1,15 @@
-package ss07_abstract_interface.practice.pr2_interface_comparable_shape;
+package ss07_abstract_interface.exercise;
 
 public class Shape {
-    private String color;
-    boolean filled;
+    private String color="red";
+    private boolean filled=true;
 
     public Shape(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
+    }
+
+    public Shape() {
     }
 
     public String getColor() {
