@@ -1,4 +1,4 @@
-package ss07_abstract_interface.exercise;
+package ss07_abstract_interface.exercise.resizeable_shape;
 
 public class Square extends Shape implements Resizeable {
     private double squareEdge = 1.0;
