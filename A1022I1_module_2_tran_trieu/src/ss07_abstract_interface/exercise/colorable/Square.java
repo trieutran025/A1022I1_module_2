@@ -1,6 +1,6 @@
 package ss07_abstract_interface.exercise.colorable;
 
-public class Square implements Colorable {
+public class Square implements IColorable {
     private double squareEdge;
     private String color;
     @Override
