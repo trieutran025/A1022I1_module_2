@@ -1,6 +1,6 @@
 package ss07_abstract_interface.exercise.resizeable_shape;
 
-public class Rectangle extends Shape implements Resizeable {
+public class Rectangle extends Shape implements IResizeable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -40,17 +40,18 @@ public class Rectangle extends Shape implements Resizeable {
     public double getAreaChange() {
         int increase = (int) (Math.random() * 101);
         resize(increase);
+        System.out.println("Increased :"+increase+"%");
         return getWidth() * getLength();
     }
 
     @Override
     public String toString() {
-        return "Rectangle{" +
-                "width=" + width + ";" +
-                "length=" + length + ";" +
-                "area of the original rectangle:" + getArea() + ";" +
+        return "Rectangle:" + "\n" +
+                "width=" + width + ";" + "\n" +
+                "length=" + length + ";" + "\n" +
+                "area of the original rectangle:" + getArea() + ";" + "\n" +
                 "area of rectangle after increasing:" + getAreaChange() +
-                '}';
+                '.';
     }
 
     @Override
