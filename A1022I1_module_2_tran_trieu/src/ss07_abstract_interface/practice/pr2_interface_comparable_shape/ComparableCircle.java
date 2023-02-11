@@ -6,8 +6,13 @@ public class ComparableCircle extends Circle
     public ComparableCircle() {
     }
 
-    public ComparableCircle(String color, boolean filled) {
+    public ComparableCircle(double radius) {
+        super(radius);
+    }
+
+    public ComparableCircle(double radius,String color, boolean filled) {
         super(color, filled);
+        setRadius(radius);
     }
 
     @Override

@@ -1,4 +1,6 @@
-package ss07_abstract_interface.practice.pr2_interface_comparable_shape;
+package ss07_abstract_interface.practice.pr3_inteface_comparator;
+
+import ss07_abstract_interface.practice.pr2_interface_comparable_shape.Shape;
 
 public class Circle extends Shape {
     private double radius = 1.0;

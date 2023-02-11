@@ -9,6 +9,9 @@ public class Shape {
         this.filled = filled;
     }
 
+    public Shape() {
+    }
+
     public String getColor() {
         return color;
     }
