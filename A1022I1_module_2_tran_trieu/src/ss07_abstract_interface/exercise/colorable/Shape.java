@@ -1,4 +1,4 @@
-package ss07_abstract_interface.exercise.resizeable_shape;
+package ss07_abstract_interface.exercise.colorable;
 
 public class Shape {
     private String color = "red";
@@ -27,4 +27,5 @@ public class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
+
 }

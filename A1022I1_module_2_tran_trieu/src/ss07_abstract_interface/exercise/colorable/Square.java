@@ -1,20 +1,11 @@
 package ss07_abstract_interface.exercise.colorable;
 
-public class Square implements IColorable {
+public class Square extends Shape implements IColorable {
     private double squareEdge;
-    private String color;
+
     @Override
     public void howToColor() {
         System.out.println("Color all four sides");
-    }
-
-    public Square(double squareEdge, String color) {
-        this.squareEdge = squareEdge;
-        this.color = color;
-    }
-
-    public Square(String color) {
-        this.color = color;
     }
 
 
@@ -37,19 +28,10 @@ public class Square implements IColorable {
         return getSquareEdge() * getSquareEdge();
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     @Override
     public String toString() {
         return "Square{" +
-                "squareEdge=" + squareEdge +";"+
-                "Area of Square="+getArea()+
+                "Area of Square=" + getArea() +
                 '}';
     }
 }

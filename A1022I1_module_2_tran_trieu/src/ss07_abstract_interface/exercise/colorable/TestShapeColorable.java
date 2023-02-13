@@ -2,14 +2,14 @@ package ss07_abstract_interface.exercise.colorable;
 
 public class TestShapeColorable {
     public static void main(String[] args) {
-       Square [] squares = new Square[3];
-       squares[0]=new Square(5.6,"Blue");
-       squares[1]=new Square(10.0);
-       squares[2]=new Square(2.0,"Green");
-        for (Square square:squares) {
-            System.out.println(square);
-            if(square.getColor()!=null){
-                square.howToColor();
+        Shape[] shapes = new Shape[3];
+        shapes[0] = new Circle(5.2);
+        shapes[1] = new Rectangle(5.1, 5.6);
+        shapes[2] = new Square(5.2);
+        for (Shape shape : shapes) {
+            System.out.println(shape);
+            if (shape instanceof IColorable) {
+                ((IColorable) shape).howToColor();
             }
         }
 

@@ -1,6 +1,7 @@
-package ss07_abstract_interface.exercise.resizeable_shape;
+package ss07_abstract_interface.exercise.colorable;
 
-public class Rectangle extends Shape implements IResizeable {
+
+public class Rectangle extends Shape implements IColorable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -36,27 +37,15 @@ public class Rectangle extends Shape implements IResizeable {
         return getWidth() * this.getLength();
     }
 
-
-    public double getAreaChange() {
-        int increase = (int) (Math.random() * 101);
-        resize(increase);
-        System.out.println("Increased :"+increase+"%");
-        return getWidth() * getLength();
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides");
     }
 
     @Override
     public String toString() {
-        return "Rectangle:" + "\n" +
-                "width=" + width + ";" + "\n" +
-                "length=" + length + ";" + "\n" +
-                "area of the original rectangle:" + getArea() + ";" + "\n" +
-                "area of rectangle after increasing:" + getAreaChange() +
-                '.';
-    }
-
-    @Override
-    public void resize(double percent) {
-        this.width = this.width + this.width * percent / 100;
-        this.length = this.length + this.length * percent / 100;
+        return "Rectangle{" +
+                "Area =" +getArea()+
+                '}';
     }
 }
