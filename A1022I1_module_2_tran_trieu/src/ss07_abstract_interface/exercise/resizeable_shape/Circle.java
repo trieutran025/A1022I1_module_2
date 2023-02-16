@@ -1,6 +1,6 @@
 package ss07_abstract_interface.exercise.resizeable_shape;
 
-public class Circle extends Shape implements IResizeable {
+public class Circle extends Shape  {
     private double radius = 1.0;
 
 

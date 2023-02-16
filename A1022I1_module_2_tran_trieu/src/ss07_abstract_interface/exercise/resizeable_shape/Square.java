@@ -1,6 +1,6 @@
 package ss07_abstract_interface.exercise.resizeable_shape;
 
-public class Square extends Shape implements IResizeable {
+public class Square extends Shape  {
     private double squareEdge = 1.0;
 
     public Square() {
