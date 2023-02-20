@@ -2,11 +2,11 @@ package ss09_clean_code.src.com.codegym;
 
 public class TennisGame {
 
-    public static String getScore(String playerOneName, String playerTwoName, int m_scoreOne, int m_scoreTwo) {
+    public static String getScore(String playerOneName, String playerTwoName, int mScoreOne, int mScoreTwo) {
         String score = "";
         int tempScore = 0;
-        if (m_scoreOne == m_scoreTwo) {
-            switch (m_scoreOne) {
+        if (mScoreOne == mScoreTwo) {
+            switch (mScoreOne) {
                 case 0:
                     score = "Love-All";
                     break;
@@ -24,18 +24,24 @@ public class TennisGame {
                     break;
 
             }
-        } else if (m_scoreOne >= 4 || m_scoreTwo >= 4) {
-            int minusResult = m_scoreOne - m_scoreTwo;
-            if (minusResult == 1) score = "Advantage playerOne";
-            else if (minusResult == -1) score = "Advantage playerTwo";
-            else if (minusResult >= 2) score = "Win for playerTwo";
-            else score = "Win for playerTwo";
+        } else if (mScoreOne >= 4 || mScoreTwo >= 4) {
+            int minusResult = mScoreOne - mScoreTwo;
+            if (minusResult == 1) {
+                score = "Advantage playerOne";
+            } else if (minusResult == -1) {
+                score = "Advantage playerTwo";
+            } else if (minusResult >= 2) {
+                score = "Win for playerTwo";
+            } else {
+                score = "Win for playerTwo";
+            }
         } else {
             for (int i = 1; i < 3; i++) {
-                if (i == 1) tempScore = m_scoreOne;
-                else {
+                if (i == 1) {
+                    tempScore = mScoreOne;
+                } else {
                     score += "-";
-                    tempScore = m_scoreTwo;
+                    tempScore = mScoreTwo;
                 }
                 switch (tempScore) {
                     case 0:
