@@ -8,13 +8,15 @@ public class MyListTest {
         myList.add(6);
         myList.add(0,"Tran Trieu");
         myList.add(1,20);
-        myList.clear();
-        myList.remove(3);
+//        myList.clear();
+//        myList.remove(3);
         for (int i = 0; i < myList.size() ; i++) {
             System.out.println(myList.get(i));
         }
         System.out.println(myList.contains(3));
-        System.out.println(myList.indexOf(21));
+        MyList myList1 = myList.clone();
+        System.out.println(myList1.size());
+//        System.out.println(myList.indexOf(21));
 
     }
 }
