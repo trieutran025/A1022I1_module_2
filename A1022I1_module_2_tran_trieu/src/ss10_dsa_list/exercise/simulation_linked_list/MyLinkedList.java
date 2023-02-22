@@ -17,7 +17,7 @@ public class MyLinkedList<E> {
     }
 
     public MyLinkedList(int defaultCapacity) {
-        Object[] temp= new Object[defaultCapacity];
+        Object[] temp = new Object[defaultCapacity];
     }
 
     public void add(E element) {
@@ -83,10 +83,10 @@ public class MyLinkedList<E> {
     }
 
     public E getLast() {
-        final Node<E> l = tail;
-        if (l == null)
+        final Node<E> last = tail;
+        if (last == null)
             throw new NoSuchElementException();
-        return l.item;
+        return last.item;
     }
 
     public E get(int index) {
@@ -114,8 +114,8 @@ public class MyLinkedList<E> {
         return current.item;
     }
 
-    public boolean remove(Object o) {
-        if (o == null) {
+    public boolean remove(E element) {
+        if (element == null) {
             for (MyLinkedList.Node x = head; x != null; x = x.next) {
                 if (x.item == null) {
                     unlink(x);
@@ -124,7 +124,7 @@ public class MyLinkedList<E> {
             }
         } else {
             for (MyLinkedList.Node x = head; x != null; x = x.next) {
-                if (o.equals(x.item)) {
+                if (element.equals(x.item)) {
                     unlink(x);
                     return true;
                 }
