@@ -1,9 +1,9 @@
-package ss12_map_tree.exercise.collection_framework.controller;
+package ss12_map_tree.exercise.collection_framework_array_list.controller;
 
 
-import ss12_map_tree.exercise.collection_framework.model.Product;
-import ss12_map_tree.exercise.collection_framework.service.IProductService;
-import ss12_map_tree.exercise.collection_framework.service.ProductServiceImpl;
+import ss12_map_tree.exercise.collection_framework_array_list.model.Product;
+import ss12_map_tree.exercise.collection_framework_array_list.service.IProductService;
+import ss12_map_tree.exercise.collection_framework_array_list.service.ProductServiceImpl;
 
 import java.util.List;
 import java.util.Scanner;

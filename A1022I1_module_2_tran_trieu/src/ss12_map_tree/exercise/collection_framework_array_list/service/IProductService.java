@@ -1,7 +1,7 @@
-package ss12_map_tree.exercise.collection_framework.service;
+package ss12_map_tree.exercise.collection_framework_array_list.service;
 
 
-import ss12_map_tree.exercise.collection_framework.model.Product;
+import ss12_map_tree.exercise.collection_framework_array_list.model.Product;
 
 import java.util.List;
 

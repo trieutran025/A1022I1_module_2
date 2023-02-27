@@ -1,4 +1,4 @@
-package ss12_map_tree.exercise.collection_framework.model;
+package ss12_map_tree.exercise.collection_framework_array_list.model;
 
 public class Product {
     private int id;
