@@ -1,6 +1,9 @@
 package ss12_map_tree.exercise.collection_framework_array_list.model;
 
-public class Product {
+
+import java.util.Objects;
+
+public class Product implements Comparable<Product> {
     private int id;
     private String productName;
     private long productPrice;
@@ -53,5 +56,21 @@ public class Product {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return id == product.id;
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
+    public int compareTo(Product o) {
+        return this.id - o.getId();
+    }
 }
