@@ -11,6 +11,7 @@ public class Circle {
         this.radius = radius;
     }
 
+
     public double getRadius() {
         return radius;
     }
@@ -28,12 +29,13 @@ public class Circle {
     }
 
     public double getArea() {
-        double area =getRadius() * getRadius() * Math.PI;
-        return area ;
+        double area = getRadius() * getRadius() * Math.PI;
+        return area;
     }
+
     public double getArea(double radius) {
-        double area =radius * radius * Math.PI;
-        return area ;
+        double area = radius * radius * Math.PI;
+        return area;
     }
 }
 

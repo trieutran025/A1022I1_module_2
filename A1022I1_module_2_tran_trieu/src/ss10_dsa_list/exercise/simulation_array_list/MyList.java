@@ -1,5 +1,7 @@
 package ss10_dsa_list.exercise.simulation_array_list;
 
+import java.util.ArrayList;
+
 public class MyList<E> {
     private int size = 0;
     private static final int DEFAULT_CAPACITY = 10;
@@ -42,6 +44,7 @@ public class MyList<E> {
         }
         return elements[index];
     }
+//    ArrayList
 
     public int size() {
         return size;
