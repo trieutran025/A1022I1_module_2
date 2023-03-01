@@ -1,8 +1,12 @@
 package ss13_search.exercise;
 
+
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class BinarySearch {
+    static int[] myArr;
+
     public static int search(int[] array, int left, int right, int value) {
         while (left <= right) {
             int middle = (left + right) / 2;
@@ -18,10 +22,22 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] myArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        System.out.println(search(myArray, 0, myArray.length - 1, 5));
-        System.out.println(search(myArray, 0, myArray.length - 1, 1));
-        System.out.println(search(myArray, 0, myArray.length - 1, 10));
-        System.out.println(search(myArray, 0, myArray.length - 1, 21));
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter n:");
+        int n = sc.nextInt();
+        myArr = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter element " + i + ":");
+            myArr[i] = sc.nextInt();
+        }
+        Arrays.sort(myArr);
+        System.out.println("myArr after sort:");
+        for (int i = 0; i < myArr.length; i++) {
+            System.out.print(myArr[i] + "\t");
+        }
+        System.out.print("\nEnter value need  find in myArr:");
+        int value = sc.nextInt();
+        System.out.print("Index of value in myArr:");
+        System.out.print(search(myArr, 0, myArr.length - 1, value));
     }
 }
