@@ -34,7 +34,7 @@ public class MyLinkedList<E> {
 
     public void addFirst(E element) {
         Node<E> newNode = new Node<>(null, element, null);
-        newNode.next = head;
+        newNode.next =  head;
         head = newNode;
         sumNodes++;
     }
