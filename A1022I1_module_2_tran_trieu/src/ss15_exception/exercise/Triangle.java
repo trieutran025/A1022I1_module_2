@@ -12,16 +12,20 @@ public class Triangle {
             int b = scanner.nextInt();
             int c = scanner.nextInt();
             if (a < 0 || b < 0 || c < 0) {
-                throw new InputMismatchException();
+                throw new IllegalTriangleException(a, b, c);
             }
             if (a + b < c || a + c < b || b + c < a) {
-                throw new IllegalTriangleException();
+                throw new IllegalTriangleException(a, b, c);
             }
-            System.out.println("This is triangle ");
+            System.out.println("This is triangle!");
         } catch (InputMismatchException e) {
-            System.out.println("Do not enter negative numbers");
+            System.out.println("Input value must be numbers!");
         } catch (IllegalTriangleException e) {
-            System.out.println("The sum of any two sides must be greater than the other");
+            System.out.println(e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Something error!");
+        } finally {
+            System.out.println("This program is end!");
         }
 
     }
