@@ -21,11 +21,11 @@ public class Triangle {
         } catch (InputMismatchException e) {
             System.out.println("Input value must be numbers!");
         } catch (IllegalTriangleException e) {
-<<<<<<< HEAD
+
             System.out.println(e.getMessage());
-=======
-            System.out.println(e.getMesseger());
->>>>>>> 9434ffc15f1f926b1140167f3da54015107e0170
+
+            System.out.println(e.getMessage());
+
         } catch (Exception e) {
             System.out.println("Something error!");
         } finally {
