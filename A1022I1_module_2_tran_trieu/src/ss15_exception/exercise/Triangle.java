@@ -7,9 +7,11 @@ public class Triangle {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
-            System.out.print("Enter triangle sides :");
+            System.out.print("Enter a:");
             int a = scanner.nextInt();
+            System.out.print("Enter b:");
             int b = scanner.nextInt();
+            System.out.print("Enter c:");
             int c = scanner.nextInt();
             if (a < 0 || b < 0 || c < 0) {
                 throw new IllegalTriangleException("Do not enter negative numbers!");
@@ -21,11 +23,7 @@ public class Triangle {
         } catch (InputMismatchException e) {
             System.out.println("Input value must be numbers!");
         } catch (IllegalTriangleException e) {
-
             System.out.println(e.getMessage());
-
-            System.out.println(e.getMessage());
-
         } catch (Exception e) {
             System.out.println("Something error!");
         } finally {
