@@ -1,4 +1,4 @@
-package ss15_exception_and_debug.paratice;
+package ss15_exception.paratice;
 
 import java.util.Scanner;
 

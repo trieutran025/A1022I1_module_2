@@ -43,7 +43,6 @@ public class ProductController {
                     id = Integer.parseInt(sc.nextLine());
                     System.out.print("Input name product: ");
                     productName = sc.nextLine();
-                    product = new Product(id, productName);
                     service.setProduct(id, productName);
                     break;
                 case 3:

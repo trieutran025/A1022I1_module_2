@@ -10,7 +10,7 @@ import java.util.List;
 
 
 public class ProductServiceImpl implements IProductService {
-    private IProductRepository repository = (IProductRepository) new ProductRepositoryImpl();
+    private IProductRepository repository = new ProductRepositoryImpl();
 
 
     @Override

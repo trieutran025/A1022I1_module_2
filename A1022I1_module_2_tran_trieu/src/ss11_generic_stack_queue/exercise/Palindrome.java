@@ -1,4 +1,4 @@
-package ss12_collection_framework.exercise;
+package ss11_generic_stack_queue.exercise;
 
 import java.util.LinkedList;
 import java.util.Queue;
